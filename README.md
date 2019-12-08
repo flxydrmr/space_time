@@ -1,2 +1,2 @@
 # space_time
-Competitive Programming 
+Competitive(Sport) Programming 
