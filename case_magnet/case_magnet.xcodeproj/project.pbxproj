@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3DD60DB82441ABD100FFDF30 /* case_magnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD60DAE2441ABD100FFDF30 /* case_magnet.framework */; };
-		3DD60DBD2441ABD100FFDF30 /* case_magnetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD60DBC2441ABD100FFDF30 /* case_magnetTests.swift */; };
+		3DD60DBD2441ABD100FFDF30 /* case_magnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD60DBC2441ABD100FFDF30 /* case_magnet.swift */; };
 		3DD60DBF2441ABD100FFDF30 /* case_magnet.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DD60DB12441ABD100FFDF30 /* case_magnet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DD60DCA2441AE2400FFDF30 /* buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD60DC92441AE2400FFDF30 /* buffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,9 @@
 		3DD60DB12441ABD100FFDF30 /* case_magnet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = case_magnet.h; sourceTree = "<group>"; };
 		3DD60DB22441ABD100FFDF30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD60DB72441ABD100FFDF30 /* case_magnetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = case_magnetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DD60DBC2441ABD100FFDF30 /* case_magnetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = case_magnetTests.swift; sourceTree = "<group>"; };
+		3DD60DBC2441ABD100FFDF30 /* case_magnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = case_magnet.swift; sourceTree = "<group>"; };
 		3DD60DBE2441ABD100FFDF30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD60DC92441AE2400FFDF30 /* buffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buffer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,8 @@
 		3DD60DA42441ABD100FFDF30 = {
 			isa = PBXGroup;
 			children = (
+				3DD60DBB2441ABD100FFDF30 /* cmag_tests */,
 				3DD60DB02441ABD100FFDF30 /* case_magnet */,
-				3DD60DBB2441ABD100FFDF30 /* case_magnetTests */,
 				3DD60DAF2441ABD100FFDF30 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,13 +79,22 @@
 			path = case_magnet;
 			sourceTree = "<group>";
 		};
-		3DD60DBB2441ABD100FFDF30 /* case_magnetTests */ = {
+		3DD60DBB2441ABD100FFDF30 /* cmag_tests */ = {
 			isa = PBXGroup;
 			children = (
-				3DD60DBC2441ABD100FFDF30 /* case_magnetTests.swift */,
+				3DD60DC92441AE2400FFDF30 /* buffer.swift */,
+				3DD60DBC2441ABD100FFDF30 /* case_magnet.swift */,
+				3DD60DC82441AD8B00FFDF30 /* o */,
+			);
+			path = cmag_tests;
+			sourceTree = "<group>";
+		};
+		3DD60DC82441AD8B00FFDF30 /* o */ = {
+			isa = PBXGroup;
+			children = (
 				3DD60DBE2441ABD100FFDF30 /* Info.plist */,
 			);
-			path = case_magnetTests;
+			path = o;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD60DBD2441ABD100FFDF30 /* case_magnetTests.swift in Sources */,
+				3DD60DBD2441ABD100FFDF30 /* case_magnet.swift in Sources */,
+				3DD60DCA2441AE2400FFDF30 /* buffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +399,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = case_magnetTests/Info.plist;
+				INFOPLIST_FILE = cmag_tests/o/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -404,7 +416,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = case_magnetTests/Info.plist;
+				INFOPLIST_FILE = cmag_tests/o/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
